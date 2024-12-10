@@ -8,27 +8,27 @@ export default function Home() {
         <div className={styles.center} >
         <Image
             className={styles.logo}
-            src="/background.png"
+            src="/BNT-LOGO_SIGLAS.svg"
             alt="Background"
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none', }}
+            style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none', padding: '20rem' }}
           />
         </div>
         <div>
-          <div>
+          {/* <div>
           <Image
             className={styles.logo}
-            src="/background.png"
+            src="/BNT-LOGO_SIGLAS.svg"
             alt="Background"
             width={0}
             height={0}
             sizes="100vw"
           />
-          </div>
+          </div> */}
         </div>
-        <div style={{marginTop: '100vh', width: "100vw", background: '#E5E9ED' , paddingTop: '5REM', paddingBottom: '5rem'}}>
+        <div style={{marginTop: '50vh', width: "100vw", background: '#E5E9ED' , paddingTop: '5REM', paddingBottom: '5rem'}}>
           <div className={styles.card_container}>
             <div className={styles.card}>
               <div className={styles.card_svg_container}>
@@ -85,32 +85,31 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.card}>
-            <div className={styles.card_svg_container}>
-                <Image
-                  src="/plant.svg"
-                  alt="Background"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className={styles.card_svg}
-                />
+              <div className={styles.card_svg_container}>
+                  <Image
+                    src="/plant.svg"
+                    alt="Background"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className={styles.card_svg}
+                  />
+                </div>
+                <div className={styles.card_paragraph}>
+                  <p className={styles.subtitle}>Export of products for human and animal consumption</p>
+                  <p className={styles.paragraph}>
+                  As our main activity, we export daily to South America, Central America, the European Union, and Asia products derived from agricultural production. Under strict quality control protocols, in both our own and third-party facilities, our production meets the international certifications demanded by the market. These include:
+                  Oils
+                  Vegetable and animal fatty acids
+                  Butters
+                  Margarines
+                  Glycerols and derivatives
+                  Protein and energy blends (feed & food grade)
+                  And more.
+                  </p>
+                </div>
               </div>
-              <div className={styles.card_paragraph}>
-                <p className={styles.subtitle}>Export of products for human and animal consumption</p>
-                <p className={styles.paragraph}>
-                As our main activity, we export daily to South America, Central America, the European Union, and Asia products derived from agricultural production. Under strict quality control protocols, in both our own and third-party facilities, our production meets the international certifications demanded by the market. These include:
-                Oils
-                Vegetable and animal fatty acids
-                Butters
-                Margarines
-                Glycerols and derivatives
-                Protein and energy blends (feed & food grade)
-                And more.
-                </p>
-              </div>
-            </div>
             <div>
-             
             </div>
           </div>
         </div>

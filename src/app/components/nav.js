@@ -52,7 +52,7 @@ export default function Nav() {
         <div className={`${styles.nav} ${isVisible ? styles.nav_visible : styles.nav_hidden}`}>
             <Link href="/">
                 <Image
-                    src="/TomasRedradoLogo.svg"
+                    src="/BNT-LOGO_clear.svg"
                     alt="TomasRedrado"
                     width={0}
                     height={0}
