@@ -28,7 +28,7 @@ export default function Home() {
           />
           </div>
         </div>
-        <div style={{marginTop: '100vh', width: "100vw", background: 'white' , paddingTop: '5REM', paddingBottom: '5rem'}}>
+        <div style={{marginTop: '100vh', width: "100vw", background: '#E5E9ED' , paddingTop: '5REM', paddingBottom: '5rem'}}>
           <div className={styles.card_container}>
             <div className={styles.card}>
               <div className={styles.card_svg_container}>
@@ -108,6 +108,9 @@ export default function Home() {
                 And more.
                 </p>
               </div>
+            </div>
+            <div>
+             
             </div>
           </div>
         </div>

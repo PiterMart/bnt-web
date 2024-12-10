@@ -4,7 +4,7 @@
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
   --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+  --button-secondary-hover: #CCFFFF;
 
   display: grid;
   align-items: center;
@@ -36,6 +36,7 @@
 .card_svg{
   width: 100%;
   height: auto;
+  filter: invert(28%) sepia(55%) saturate(1179%) hue-rotate(156deg) brightness(94%) contrast(98%);
 }
 .card_svg_container{
   width: 30%;
