@@ -1,0 +1,93 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    z-index: 100;
+    font-family: var(--font-mono);
+    margin: auto;
+    padding: 1rem;
+    padding-right: 2rem;
+    color: white;
+    background-color: #026481;
+    position: absolute;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+    text-align: center;
+    cursor: url("/heart.svg"), auto;
+  }
+
+  .contentSection{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid #000000;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    text-justify: auto;
+  }
+
+  /* contact form*/
+
+  .form__container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    text-align: left;
+    margin: auto;
+  }
+  .form__container button{
+    margin: 0.5rem;
+  }
+  .form{
+    font-family: NeueDisp;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: left;
+    background-color: aliceblue;
+  }
+  .form p{
+    font-family: NeueDisp;
+    font-weight: bold;
+  }
+  .form input::placeholder {
+    font-family: NeueDisp;
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  
+  .form input::-ms-input-placeholder {
+    font-family: NeueDisp;
+    color: black;
+  }
+  .form textarea{
+    height: 15vh;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .form input{
+    height: 5vh;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+  }
