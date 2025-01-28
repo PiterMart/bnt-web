@@ -13,7 +13,7 @@ export default function Home() {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none', padding: '20rem' }}
+            style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '10rem', pointerEvents: 'none', padding: '15rem'}}
           />
         </div>
         <div>
@@ -28,10 +28,10 @@ export default function Home() {
           />
           </div> */}
         </div>
-        <div style={{marginTop: '50vh', width: "100vw", background: '#E5E9ED' , paddingTop: '5REM', paddingBottom: '5rem'}}>
+        <div style={{marginTop: '50vh', width: "100vw", background: '#E5E9ED' }}>
           <div className={styles.card_container}>
-            <div className={styles.card}>
-              <div className={styles.card_svg_container}>
+            <div className={styles.card} style={{alignItems: "flex-end",backgroundColor: "#026481", color: 'white'}}>
+              {/* <div className={styles.card_svg_container}>
                 <Image
                   src="/plane.svg"
                   alt="Background"
@@ -39,8 +39,8 @@ export default function Home() {
                   height={0}
                   sizes="100vw"
                   className={styles.card_svg}
-                />
-              </div>
+               />
+              </div> */}
               <div className={styles.card_paragraph}>
                 <p className={styles.subtitle}>Logistics</p>
                 <p className={styles.paragraph}>
@@ -48,8 +48,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className={styles.card}>
-              <div className={styles.card_svg_container}>
+            <div className={styles.card} >
+              {/* <div className={styles.card_svg_container}>
                 <Image
                   src="/boat.svg"
                   alt="Background"
@@ -58,7 +58,7 @@ export default function Home() {
                   sizes="100vw"
                   className={styles.card_svg}
                 />
-              </div>
+              </div> */}
               <div className={styles.card_paragraph}>
                 <p className={styles.subtitle}>Export on behalf of third parties</p>
                 <p className={styles.paragraph}>
@@ -66,8 +66,12 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className={styles.card}>
-            <div className={styles.card_svg_container}>
+            <div>
+            </div>
+          </div>
+          <div className={styles.card_container}>
+            <div className={styles.card} style={{alignItems: "flex-end"}}>
+            {/* <div className={styles.card_svg_container}>
                 <Image
                   src="/truck.svg"
                   alt="Background"
@@ -76,7 +80,7 @@ export default function Home() {
                   sizes="100vw"
                   className={styles.card_svg}
                 />
-              </div>
+              </div> */}
               <div className={styles.card_paragraph}>
                 <p className={styles.subtitle}>Imports</p>
                 <p className={styles.paragraph}>
@@ -84,8 +88,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className={styles.card}>
-              <div className={styles.card_svg_container}>
+            <div className={styles.card} style={{ backgroundColor: "#026481", color: 'white',}}>
+              {/* <div className={styles.card_svg_container}>
                   <Image
                     src="/plant.svg"
                     alt="Background"
@@ -94,7 +98,7 @@ export default function Home() {
                     sizes="100vw"
                     className={styles.card_svg}
                   />
-                </div>
+                </div> */}
                 <div className={styles.card_paragraph}>
                   <p className={styles.subtitle}>Export of products for human and animal consumption</p>
                   <p className={styles.paragraph}>
@@ -109,7 +113,25 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            <div>
+          </div>
+          <div style={{ backgroundColor: "#026481", color: 'white', paddingTop: '10rem', height: '100vh'}}>
+            <div className={styles.card_container} style={{ width: '100%'}}>
+              <div className={styles.card_svg_container}>
+                  <Image
+                    src="/truck.svg"
+                    alt="Background"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className={styles.card_svg}
+                  />
+                </div>
+                <div className={styles.card_paragraph} style={{margin: 'auto', textAlign: 'center',  margin: "auto", textAlign: "center", maxWidth: "1000px"}}>
+                  <p className={styles.title}>About us</p>
+                  <p className={styles.paragraph}>
+                  We are experts in international trade. Our main activity is the trading and brokering of commodities and specialties derived from agricultural by-products, developing commercial and administrative processes for our company and third parties. With over 30 years of experience in the market, we now have a solid presence in countries across America, Europe, and Asia through our own offices and associates. With the professionalism that defines us, we manage exports and imports, engaging in areas such as Finance, Administration, Legal, Accounting, and Logistics.
+                  </p>
+                </div>
             </div>
           </div>
         </div>

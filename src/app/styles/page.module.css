@@ -15,23 +15,30 @@
 }
 
 .title{
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 .subtitle{
   font-size: 2rem;
 }
 .paragraph{
   font-size: 1rem;
+  text-align: justify;
+  margin-top: 1rem;
+  width: 100%;
+  line-height: 1.25rem;
 }
 .card{
   display: flex;
   flex-direction: row;
   gap: 1rem;
   max-width: 50%;
-  margin-top: 1.4rem;
+  height: 60vh;
+  margin: auto;
 }
 .card_paragraph{
-  width: 75%;
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5rem;
 }
 .card_svg{
   width: 100%;
@@ -74,7 +81,7 @@
 
 @media (max-width: 1200px) {
   .card_container{
-    width: 95%;
+    width: 100%;
   }
 
 }

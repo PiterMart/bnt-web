@@ -53,18 +53,17 @@ export default function Footer() {
 
     return (
         <div className={styles.footer}>
-        <p className={styles.title} style={{textAlign: 'center'}}>Contact us!</p>
 
         <div className={styles.contentSection} style={{borderTop: '0px solid #ffffff', marginTop: '1rem'}}>
             <ContactForm/>
         </div>
 
         <div className={styles.contentSection} style={{borderTop: '1px solid #ffffff'}}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4908106012235!2d-58.4446443!3d-34.5917485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb56bc74fc40d%3A0xde01271c180d65!2sValerie&#39;s%20Factory!5e0!3m2!1ses-419!2sar!4v1712180399625!5m2!1ses-419!2sar" style={{border: '0', marginTop: '5rem'}}width="240" height="135" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4908106012235!2d-58.4446443!3d-34.5917485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb56bc74fc40d%3A0xde01271c180d65!2sValerie&#39;s%20Factory!5e0!3m2!1ses-419!2sar!4v1712180399625!5m2!1ses-419!2sar" style={{border: '0', marginTop: '5rem'}}width="240" height="135" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
           <Link href="/">
           <Image
-                  src="/valeriesLogoWhite.png"
+                  src="/BNT-LOGO_SIGLAS_clear.svg"
                   width={0}
                   height={0}
                   sizes="100vw"
