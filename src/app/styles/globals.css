@@ -1,11 +1,11 @@
 :root {
-  --background: #CCFFFF;
+  --background: #000000;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #E5E9ED;
+    --background: #000000;
     --foreground: #000000;
   }
 }
@@ -33,6 +33,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+textarea{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

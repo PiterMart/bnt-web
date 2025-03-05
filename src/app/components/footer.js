@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import styles from '../styles/footer.module.css';
 import ContactForm from './contactForm';
+import ContactForm2 from './contactForm2';
 
 
 
@@ -55,7 +56,8 @@ export default function Footer() {
         <div className={styles.footer}>
 
         <div className={styles.contentSection} style={{borderTop: '0px solid #ffffff', marginTop: '1rem'}}>
-            <ContactForm/>
+            {/* <ContactForm/> */}
+            <ContactForm2/>
         </div>
 
         <div className={styles.contentSection} style={{borderTop: '1px solid #ffffff'}}>

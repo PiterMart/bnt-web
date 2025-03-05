@@ -8,6 +8,7 @@ import styles from '../styles/nav.module.css';
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
+    const [hasScrolled, setHasScrolled] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
     const currentPath = usePathname();
 
@@ -22,19 +23,12 @@ export default function Nav() {
         setIsMenuOpen((prev) => !prev);
     };
 
-    const isCurrent = (path) => {
-        return currentPath === path;
-    };
+    const isCurrent = (path) => currentPath === path;
 
     const controlNavbar = () => {
         if (typeof window !== 'undefined') {
-            if (window.scrollY > lastScrollY) {
-                // scrolling down
-                setIsVisible(false);
-            } else {
-                // scrolling up
-                setIsVisible(true);
-            }
+            setHasScrolled(window.scrollY > 50);
+            setIsVisible(window.scrollY < lastScrollY);
             setLastScrollY(window.scrollY);
         }
     };
@@ -42,14 +36,12 @@ export default function Nav() {
     useEffect(() => {
         if (typeof window !== 'undefined') {
             window.addEventListener('scroll', controlNavbar);
-            return () => {
-                window.removeEventListener('scroll', controlNavbar);
-            };
+            return () => window.removeEventListener('scroll', controlNavbar);
         }
     }, [lastScrollY]);
 
     return (
-        <div className={`${styles.nav} ${isVisible ? styles.nav_visible : styles.nav_hidden}`}>
+        <div className={`${styles.nav} ${hasScrolled ? styles.nav_scrolled : styles.nav_transparent}`}>
             <Link href="/">
                 <Image
                     src="/BNT-LOGO_clear.svg"
@@ -57,7 +49,7 @@ export default function Nav() {
                     width={0}
                     height={0}
                     className={styles.nav_logo}
-                    priority = {true}
+                    priority={true}
                 />
             </Link>
             <button className={`${styles.navButton} ${isMenuOpen ? styles.open : ''}`} onClick={toggleMenu}>
@@ -72,7 +64,7 @@ export default function Nav() {
                             <Link
                                 href={page.path}
                                 className={isCurrent(page.path) ? styles.page_current : ''}
-                                onClick={() => setIsMenuOpen(false)} // Close menu on click
+                                onClick={() => setIsMenuOpen(false)}
                             >
                                 {page.name}
                             </Link>

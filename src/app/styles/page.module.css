@@ -41,11 +41,11 @@
   padding: 1.5rem;
 }
 .card_svg{
-  width: 100%;
+  width: 5rem;
   height: auto;
+  margin: auto;
   float: left;
   shape-outside: circle(50%);
-  filter: invert(28%) sepia(55%) saturate(1179%) hue-rotate(156deg) brightness(94%) contrast(98%);
 }
 .card_svg_container{
   width: 30%;
@@ -73,6 +73,57 @@
   position: relative;
   padding: 4rem 0;
 }
+.centerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top:  10vh;
+  font-size: 4rem;
+  width: 100%;
+  margin: auto;
+  color: white;
+  text-shadow: 2px 5px 12px black;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.traits{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.traits_section{
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-content: center;
+  max-width: 25%;
+  flex-wrap: wrap;
+}
+
+/* fade in effect */
+
+@keyframes fadeInBlur {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0) brightness(500) drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
+  }
+}
+
+.fadeInBlur {
+  animation: fadeInBlur 2s ease-in-out forwards;
+}
+
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -81,6 +132,18 @@
 
 @media (max-width: 1200px) {
   .card_container{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .card_container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .card{
+    max-width: 100%;
     width: 100%;
   }
 

@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import styles from "./styles/page.module.css";
+import ContactForm2 from "./components/contactForm2";
+import TypewriterText from "./components/TypeWriter";
 
 export default function Home() {
   return (
@@ -8,25 +11,26 @@ export default function Home() {
         <div className={styles.center} >
         <Image
             className={styles.logo}
-            src="/BNT-LOGO_SIGLAS.svg"
+            src="/background2.jpg"
             alt="Background"
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '10rem', pointerEvents: 'none', padding: '15rem'}}
+            style={{ width: 'auto', height: '100vh',justifySelf: 'auto', position: 'fixed', zIndex: '-1', right: '0', bottom: '0rem', pointerEvents: 'none', opacity: '75%'}}
           />
         </div>
-        <div>
-          {/* <div>
-          <Image
-            className={styles.logo}
-            src="/BNT-LOGO_SIGLAS.svg"
+        <div className={styles.centerCard}>
+        <Image
+            className={`${styles.logo} ${styles.fadeInBlur}`}
+            src="/BNT-LOGO.svg"
             alt="Background"
+            placeholder="empty" 
             width={0}
             height={0}
             sizes="100vw"
+            style={{ width: 'auto', height: 'auto', justifySelf: 'auto', position: 'relative', pointerEvents: 'none', maxHeight: '35vh', filter: 'brightness(500) drop-shadow(3px 3px 2px rgba(0, 0, 0, .7))' }}
           />
-          </div> */}
+          <TypewriterText /> 
         </div>
         <div style={{marginTop: '50vh', width: "100vw", background: '#E5E9ED' }}>
           <div className={styles.card_container}>
@@ -114,21 +118,77 @@ export default function Home() {
                 </div>
               </div>
           </div>
-          <div style={{ backgroundColor: "#026481", color: 'white', paddingTop: '10rem', height: '100vh'}}>
+          <div style={{ backgroundColor: "#026481", color: 'white', paddingTop: '10rem'}}>
             <div className={styles.card_container} style={{ width: '100%'}}>
-              <div className={styles.card_svg_container}>
-                  <Image
-                    src="/truck.svg"
-                    alt="Background"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className={styles.card_svg}
-                  />
-                </div>
-                <div className={styles.card_paragraph} style={{margin: 'auto', textAlign: 'center',  margin: "auto", textAlign: "center", maxWidth: "1000px"}}>
+                <div className={styles.card_paragraph} style={{margin: 'auto', textAlign: 'center',  margin: "auto", textAlign: "center", maxWidth: "1000px", marginTop: '-2px'}}>
                   <p className={styles.title}>About us</p>
-                  <p className={styles.paragraph}>
+                  <div className={styles.traits}>
+                    <div className={styles.traits_section}>
+                      <Image
+                        src="/handshake.svg"
+                        alt="Background"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className={styles.card_svg}
+                      />
+                      <p className={styles.subtitle}>
+                        COMMITMENT
+                      </p>
+                      <p>
+                      Facing challenges with determination, creativity, and delivering results.
+                      </p>
+                    </div>
+                    <div className={styles.traits_section}>
+                      <Image
+                        src="/shield.svg"
+                        alt="Background"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className={styles.card_svg}
+                      />
+                      <p className={styles.subtitle}>
+                        INTEGRITY
+                      </p>
+                      <p>
+                        Operating with ethics, honesty, and full transparency.
+                      </p>
+                    </div>
+                    <div className={styles.traits_section}>
+                      <Image
+                        src="/check.svg"
+                        alt="Background"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className={styles.card_svg}
+                      />
+                      <p className={styles.subtitle}>
+                        TRUST
+                      </p>
+                      <p>
+                        Achieving the best results through teamwork and respect.
+                      </p>
+                    </div>
+                    <div className={styles.traits_section}>
+                      <Image
+                        src="/medal.svg"
+                        alt="Background"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className={styles.card_svg}
+                      />
+                      <p className={styles.subtitle}>
+                        EXCELLENCE
+                      </p>
+                      <p>
+                        Striving for improvement with professionalism and humility.
+                      </p>
+                    </div>
+                  </div>
+                  <p className={styles.subtitle} style={{width: '90%', margin: 'auto', marginTop: '2rem'}}>
                   We are experts in international trade. Our main activity is the trading and brokering of commodities and specialties derived from agricultural by-products, developing commercial and administrative processes for our company and third parties. With over 30 years of experience in the market, we now have a solid presence in countries across America, Europe, and Asia through our own offices and associates. With the professionalism that defines us, we manage exports and imports, engaging in areas such as Finance, Administration, Legal, Accounting, and Logistics.
                   </p>
                 </div>

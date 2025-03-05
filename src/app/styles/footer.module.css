@@ -6,7 +6,6 @@
     font-size: 1rem;
     width: 100%;
     z-index: 100;
-    font-family: var(--font-mono);
     margin: auto;
     padding: 1rem;
     padding-right: 2rem;
@@ -48,9 +47,11 @@
   }
   .form__container button{
     margin: 0.5rem;
+    padding: 1rem;
+    background-color:  #026481;
   }
   .form{
-    font-family: NeueDisp;
+    color: black;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -62,17 +63,15 @@
     background-color: aliceblue;
   }
   .form p{
-    font-family: NeueDisp;
     font-weight: bold;
   }
+
   .form input::placeholder {
-    font-family: NeueDisp;
     color: black;
     opacity: 1; /* Firefox */
   }
   
   .form input::-ms-input-placeholder {
-    font-family: NeueDisp;
     color: black;
   }
   .form textarea{
@@ -82,6 +81,8 @@
     font-size: 1rem;
     padding: 1rem;
     border-radius: 10px;
+    width: 100%;
+    margin: auto;
   }
   .form input{
     height: 5vh;
@@ -90,4 +91,14 @@
     font-size: 1rem;
     padding: 1rem;
     border-radius: 10px;
+    width: 100%;
+    margin: auto;
+  }
+
+  @media (max-width: 800px) {
+
+    .form__container{
+      width: 100%;
+    }
+  
   }
